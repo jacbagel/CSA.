@@ -6,6 +6,9 @@ public class mathex {
         System.out.println(swapper1);
         System.out.println(swapper2);
         System.out.println(swapper3);
+
+        timeLeft(1,15,4,36);
+        timeLeft(1,34,8,20);
     }
     public static int swap(int x){
         int hundred = x/100*100;
@@ -15,4 +18,18 @@ public class mathex {
         return result;
     }
     
+    public static void timeLeft(int curHour, int curMin, int depHour, int depMin){
+      int mytime = (curHour*60) + curMin;
+      int furtime = (depHour*60) + depMin;
+      int deptimeh = (furtime - mytime)/60;
+      int deptimem = (furtime- mytime)%60;
+      System.out.println( deptimeh + " hours and " + deptimem + " minutes");
+
+
+
+
+      
+
+
+    }
 }
