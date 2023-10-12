@@ -78,15 +78,11 @@ public class Frog {
 		System.out.println(f2);
 		
 		// make a new frog named Frank.  have him jump twice and then go visit Freddy.
-		Frog f3 = new Frog( n:Frank, 0, 0);
+		Frog f3 = new Frog("Frank", 0, 0);
 		f3.Jump(2);
 		System.out.println(f3);
 		f3.visit(f1);
 		System.out.print(f3);
-
-
-
-
 
 	}
 
