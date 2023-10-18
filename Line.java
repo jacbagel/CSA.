@@ -13,21 +13,7 @@ public class Line {
 		end1 = new Point();
 		end2 = new Point();
 	}
-	/*
-	public double distance()
-	{
-		//You may find Math.pow(base, power) and Math.sqrt(num) useful
-	}
-	public Point midpoint()
-	{
-		
-	}
 	
-	public boolean sameLength(Line otherLine)
-	{
-		
-	}
-	*/
 	public double slope()
 	{
 		double m;
@@ -35,6 +21,33 @@ public class Line {
 		return m;
 		
 	}
+	public double distance()
+	{
+		//You may find Math.pow(base, power) and Math.sqrt(num) useful, aka distance formula
+		double deltaX = end2.getX() - end1.getX();
+		double deltaY = end2.getY() - end1.getY();
+		double xsqu = Math.pow(deltaX, 2);
+		double ysqu = Math.pow(deltaY, 2);
+		double xplusy = xsqu + ysqu;
+		double distance = Math.sqrt(xplusy);
+		return distance();
+	}
+	public Point midpoint()
+	{
+		double xadd = end1.getX() + end2.getX();
+		double yadd = end1.getY() + end2.getY();
+		double px = xadd/2;
+		double py = yadd/2;
+		Point midpoint = new Point(px,py);
+		return midpoint;
+
+	}
+	
+	public boolean sameLength(Line otherLine)
+	{
+		
+	}
+	
 	public String toString()
 	{
 		String s = "Line with endpoints " + end1 + " and " + end2;
