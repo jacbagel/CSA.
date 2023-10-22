@@ -26,6 +26,9 @@ public class Point {
 		return s;
 	}
     public static void main(String [] args){
-        Point 
+        Point p1 = new Point(4,7);
+        Point p2 = new Point (8,-3);
+        System.out.println(p1);
+        System.out.println(p2);
     }
 }

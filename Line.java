@@ -29,8 +29,8 @@ public class Line {
 		double xsqu = Math.pow(deltaX, 2);
 		double ysqu = Math.pow(deltaY, 2);
 		double xplusy = xsqu + ysqu;
-		double distance = Math.sqrt(xplusy);
-		return distance();
+		double tdistance = Math.sqrt(xplusy);
+		return tdistance;
 	}
 	public Point midpoint()
 	{
@@ -45,7 +45,9 @@ public class Line {
 	
 	public boolean sameLength(Line otherLine)
 	{
-		
+		double lin = otherLine.distance();
+		double olin = this.distance();
+		return Math.abs(lin - olin)<=.0001;
 	}
 	
 	public String toString()
@@ -80,14 +82,14 @@ public class Line {
 		System.out.println("Parallel? " + l1.parallel(l2));
 		
 		
-		//double dist = l1.distance();
-		//Point p1 = l1.midpoint();
+		double dist = l1.distance();
+		Point p1 = l1.midpoint();
 		
-		//System.out.println("distance = " + dist);
-		//System.out.println("Midpoint = " + p1);
+		System.out.println("distance = " + dist);
+		System.out.println("Midpoint = " + p1);
 		
-		//System.out.println("distance = " + l2.distance());
-		//System.out.println("Same length? " + l1.sameLength(l2));
+		System.out.println("distance = " + l2.distance());
+		System.out.println("Same length? " + l1.sameLength(l2));
 
 	}
 
