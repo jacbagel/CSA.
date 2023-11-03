@@ -7,14 +7,22 @@ public class Conditionals{
         //System.out.println(ab.chimpTrouble(true, false));
         //System.out.println(ab.chimpTrouble(false, true));
 
-        System.out.println(ab.negPos(1,-1,false));
-        System.out.println(ab.negPos(-1,1,false));
-        System.out.println(ab.negPos(1,1,false));
-        System.out.println(ab.negPos(-1,-1,false));
-        System.out.println(ab.negPos(-4,-5, true));
-        System.out.println(ab.negPos(-4,5,true));
-        System.out.println(ab.negPos(4,5,true));
-        System.out.println(ab.negPos(4,-5,true));
+        // System.out.println(ab.negPos(1,-1,false));
+        // System.out.println(ab.negPos(-1,1,false));
+        // System.out.println(ab.negPos(1,1,false));
+        // System.out.println(ab.negPos(-1,-1,false));
+        // System.out.println(ab.negPos(-4,-5, true));
+        // System.out.println(ab.negPos(-4,5,true));
+        // System.out.println(ab.negPos(4,5,true));
+        // System.out.println(ab.negPos(4,-5,true));
+
+        // System.out.println(ab.pickUpPhone(false, false, true));
+        // System.out.println(ab.pickUpPhone(true, true, true));
+        // System.out.println(ab.pickUpPhone(true, true, false));
+        // System.out.println(ab.pickUpPhone(false, true, false));
+        // System.out.println(ab.pickUpPhone(true, false, false));
+        // System.out.println(ab.pickUpPhone(false, false, false));
+
 
     }
     public  boolean chimpTrouble(boolean aSmile, boolean bSmile){
@@ -47,15 +55,33 @@ public class Conditionals{
     
     public boolean pickUpPhone(boolean isMorning, boolean isMom, boolean isAsleep){
         if (isAsleep == true){
+            return false;
+        }
+        else if (isMorning == true){
             if (isMom == true)
             return true;
             else 
             {
             return false;
             }
-        else ()
         }
+        else{
+            if (isMom == true || isAsleep != true || isMorning != true){
+            return true;
+            }
+            else{
+            return false;
+            }
+        }
+        
     }
+
+    public String setAlarm(int d, boolean vacation){
+        
+
+    }
+
+
 
 }
 
