@@ -43,6 +43,8 @@ public class Conditionals{
         System.out.println(ab.blackjack(25, 24));
         System.out.println(ab.blackjack(17, 9));
         System.out.println(ab.blackjack(12, 18));
+        //System.out.println(ab.blackjack(22, 19));
+        
 
     }
     public  boolean chimpTrouble(boolean aSmile, boolean bSmile){
@@ -135,6 +137,9 @@ public class Conditionals{
             else{
                 return b;
             }
+        }
+        else if ( a > 21 && b <= 21){
+            return b;
         }
         else{
             return 0;
