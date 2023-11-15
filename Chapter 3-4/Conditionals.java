@@ -47,7 +47,7 @@ public class Conditionals{
         
 
     }
-    public  boolean chimpTrouble(boolean aSmile, boolean bSmile){
+    public boolean chimpTrouble(boolean aSmile, boolean bSmile){
         if ((aSmile == true && bSmile == true) || (aSmile == false && bSmile == false)){
             return true;
         }
