@@ -1,9 +1,9 @@
 public class WhileLoops {
     public static void main(String [] args){
         WhileLoops ab = new WhileLoops();
-        System.out.println(ab.addOdds(5));
-        System.out.println(ab.addOdds(37));
-        System.out.println(ab.addOdds(100));
+        System.out.println(ab.addOdds(5)); //9
+        System.out.println(ab.addOdds(8)); //16
+        // System.out.println(ab.addOdds(100));
 
     //     System.out.println(ab.sumDigits(5384)); //20
     //     System.out.println(ab.sumDigits(12)); //3
@@ -24,9 +24,10 @@ public class WhileLoops {
     public int addOdds(int n){
         int sum = 1;
         int i = 1;
-        while(i<n){
+        while(i < n){
             i = i+2;
             sum = sum + i;
+            n = n-1;
         }
         return sum;    
     }
