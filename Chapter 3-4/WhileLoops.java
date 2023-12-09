@@ -3,22 +3,22 @@ public class WhileLoops {
         WhileLoops ab = new WhileLoops();
         System.out.println(ab.addOdds(5)); //9
         System.out.println(ab.addOdds(8)); //16
-        // System.out.println(ab.addOdds(100));
+        System.out.println(ab.addOdds(100));
 
-    //     System.out.println(ab.sumDigits(5384)); //20
-    //     System.out.println(ab.sumDigits(12)); //3
-    //     System.out.println(ab.sumDigits(456)); //15
+        System.out.println(ab.sumDigits(5384)); //20
+        System.out.println(ab.sumDigits(12)); //3
+        System.out.println(ab.sumDigits(456)); //15
 
-    //     System.out.println(ab.howManyYears(111.2, 120)); //7
-    //     System.out.println(ab.howManyYears(111.2, 150)); // 27
+        System.out.println(ab.howManyYears(111.2, 120)); //7
+        System.out.println(ab.howManyYears(111.2, 150)); // 27
         
-    //     ab.printSum(6); //21
-    //     ab.printSum(8); //36
-
-    //     System.out.println(ab.isPerfectSquare(25)); //true
-    //     System.out.println(ab.isPerfectSquare(24)); //false
-    //     System.out.println(ab.isPerfectSquare(49)); //true
-    //     System.out.println(ab.isPerfectSquare(13)); //false
+        ab.printSum(6); //2
+        ab.printSum(8); //36
+        
+        System.out.println(ab.isPerfectSquare(25)); //true
+        System.out.println(ab.isPerfectSquare(24)); //false
+        System.out.println(ab.isPerfectSquare(49)); //true
+        System.out.println(ab.isPerfectSquare(13)); //false
      }
     
     public int addOdds(int n){
