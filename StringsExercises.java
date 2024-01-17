@@ -17,28 +17,30 @@ public class StringsExercises {
         //Done
         //System.out.println("04/20/2014 becomes " + dateString("04/20/2014"));
 
-        //
-        System.out.println("04/20/2014 becomes" + dateString2("04/20/2014"));
-        System.out.println("4/20/2014 becomes" + dateString2("4/20/2014"));
-        System.out.println("04/2/2014 becomes" + dateString2("04/2/2014"));
-        System.out.println("4/2/2014 becomes" + dateString2("4/2/2014"));
+        //Done
+        // System.out.println("04/20/2014 becomes" + dateString2("04/20/2014")); //20-04-2014
+        // System.out.println("4/20/2014 becomes" + dateString2("4/20/2014")); //20-4-2014
+        // System.out.println("04/2/2014 becomes" + dateString2("04/2/2014")); //2-04-2014
+        // System.out.println("4/2/2014 becomes" + dateString2("4/2/2014"));
         
+        //Done
         // System.out.println("\nstartsWith"); 
-        // System.out.println(startsWith("architecture", "arch"));
-        // System.out.println(startsWith("architecture", "a"));
-        // System.out.println(startsWith("arch", "architecture"));
-        // System.out.println(startsWith("architecture", "rch"));
-        // System.out.println(startsWith("architecture", "architecture"));
+        // System.out.println(startsWith("architecture", "arch")); //true
+        // System.out.println(startsWith("architecture", "a")); //true
+        // System.out.println(startsWith("arch", "architecture")); //false
+        // System.out.println(startsWith("architecture", "rch")); //false
+        // System.out.println(startsWith("architecture", "architecture")); //true
         
+        //Done
         // System.out.println("\nendsWith");
-        // System.out.println(endsWith("astronomy", "nomy"));
-        // System.out.println(endsWith("astronomy", "y"));
-        // System.out.println(endsWith("astronomy", "nom"));
-        // System.out.println(endsWith("nomy", "astronomy"));
-        // System.out.println(endsWith("astronomy", "astronomy"));
+        // System.out.println(endsWith("astronomy", "nomy")); //true
+        // System.out.println(endsWith("astronomy", "y")); //true
+        // System.out.println(endsWith("astronomy", "nom")); //false
+        // System.out.println(endsWith("nomy", "astronomy")); //false
+        // System.out.println(endsWith("astronomy", "astronomy")); ///true
         
-        // System.out.println("\nremoveTag");
-        // System.out.println(removeTag("<b>Hello World</b>", "b"));
+        System.out.println("\nremoveTag");
+        System.out.println(removeTag("<b>Hello World</b>", "b")); //Hello world
         // System.out.println(removeTag("<b>Hello World</b>", "head"));
         // System.out.println(removeTag("Hello World</b>", "b"));
         // System.out.println(removeTag("<b>Hello World", "b"));
@@ -54,7 +56,6 @@ public class StringsExercises {
     }
 
     public static String convertName(String name){
-        // formart 
         int c = name.indexOf(",");
         name = name.substring(c+1).trim() + " " + name.substring(0, c).trim();
         return name;
@@ -73,15 +74,37 @@ public class StringsExercises {
     }
 
     public static String dateString2(String america2){
-        int s = america2.indexOf('/'); //04/
-        int sl = america2.lastIndexOf('/'); // /year
-        String day = america2.substring((s), (sl));
-        String month = america2.substring(0, (s-1));
-        String year = america2.substring((sl-1));
+        int s = america2.indexOf('/');
+        int sl = america2.lastIndexOf('/');
+        String day = america2.substring((s+1), (sl)); 
+        String month = america2.substring(0, (s));
+        String year = america2.substring((sl+1));
         String europe2 = " " + day + "-" + month + "-" + year;
         return europe2;
     }
 
+    public static boolean startsWith(String s, String prefix){
+        int lp = prefix.length();
+        int ls = s.length();
+        if (lp<=ls && prefix.charAt(0) == s.charAt(0)){
+            return true;
+        }
+        return false;
+    }
 
+    public static boolean endsWith(String s, String sufix){
+        int sl = sufix.length();
+        int wl = s.length();
+        if (sl <= wl && sufix.charAt(sl-1) == s.charAt(wl-1)){
+            return true;
+        }
+        return false;
+    }
  
-}
+    public static String removeTag(String link, String tag){
+        int fb = link.indexOf("<");
+        if (fb == 0)
+
+        }
+
+    }
