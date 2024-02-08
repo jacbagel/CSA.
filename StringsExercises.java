@@ -103,7 +103,7 @@ public class StringsExercises {
  
     public static String removeTag(String link, String tag){
         int fb = link.indexOf("<");
-        if (fb == 0)
+        if (fb == 0);
 
         }
 
