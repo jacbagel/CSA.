@@ -76,7 +76,7 @@ public class NitalTester {
             return false;
     } 
 
-       return true;   // replace this
+       return true;  
     }
 
     public static void main(String[] args){

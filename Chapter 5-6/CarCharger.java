@@ -32,10 +32,10 @@ public class CarCharger {
      * @return      the total cost to charge the car.
      */
     
-     public int getChargingCost(int startHour, int numHours){
-        for(int i = 0; )
-        return ;		// replace this
-    }
+    // public int getChargingCost(int startHour, int numHours){
+      //  for(int i = 0; )
+       // return ;		// replace this
+   // }
 
     /** Determines the start time to charge the car at the
      * lowest cost for the given charge time.

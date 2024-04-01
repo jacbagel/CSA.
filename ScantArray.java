@@ -64,20 +64,18 @@ public class ScantArray {
      public void removeColumn(int col){ 
         for(int i = 0; entries.size() > i; i++ ){
             int c = entries.get(i).getColumn();
-            if (entries.get(i).getColumn() == col){
-                entries.remove(i); 
-            }
             if(c >= col){
-
                 c -=1;
                 addEntry(entries.get(i).getRow(), c, entries.get(i).getValue());
+            }
+            if (entries.get(i).getColumn() >= col){
+                entries.remove(i); 
             }
         }
     }
 
-    /** Allows the ScantArray to be printed.  The
-     * result should look like a 2D array.  Entries
-     * not represented should display 0.  Ex:
+    /** Allows the ScantArray to be printed. The result should look like a 2D array. Entriesnot represented should display 0.  
+     * Ex:
      * 0 0 3 0 2
      * 1 0 0 0 0
      * 0 0 3 4 0
@@ -85,17 +83,22 @@ public class ScantArray {
      * @return
      */
     public String toString(){
-        /* part c */
         String s = "";
-
-        
-		
-		
+        int row = getNumRows(); 
+        int col = getNumColumns();
+        for(int i = 0; i < row; i++){
+            for(int j = 0; j < col; j++){
+                if(getValueAt(i,j) != 0);
+                s += getValueAt(i,j);
+            }
+        s += "\n";
+        }
         return s;
-    }
+            
+        }
 
     public static void main(String[] args){
-        ScantArray sa1 = new ScantArray(4,5);
+        ScantArray sa1 = new ScantArray(6,5);
         sa1.addEntry(1,4,4);
         sa1.addEntry(2,0,1);
         sa1.addEntry(3,1,-9);
@@ -104,7 +107,7 @@ public class ScantArray {
         System.out.println(sa1.getValueAt(2,0)); //return 1 
         System.out.println(sa1.getValueAt(3,1)); // return -9
         System.out.println(sa1.getValueAt(2,3)); // return 0
-        System.out.println("rows "+ sa1.getNumRows());
+        System.out.println("rows "+ sa1.getNumRows()); 
         System.out.println("columns "+ sa1.getNumColumns());
 
         System.out.println(sa1);
@@ -112,7 +115,11 @@ public class ScantArray {
         sa1.removeColumn(1);
         System.out.println(sa1);
 
-        /******* please add one more test of your own *******/
+        ScantArray sa2 = new ScantArray(2, 2);
+        sa2.addEntry(0, 1, 1);
+        sa2.addEntry(1, 0, 2);
+        System.out.println(sa2);
+        System.out.println("rows "+ sa2.getNumRows());
     }
 }
 
