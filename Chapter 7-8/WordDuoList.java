@@ -40,10 +40,10 @@ public class WordDuoList {
      * Precondition:  word.length >2
      */
     
-    public WordDuoList(String[] words){
-        //method basical
-        for(int ) 
-    }
+    // public WordDuoList(String[] words){
+    //     //method basical
+    //     for(int ) 
+    // }
     
     public String toString(){
         String s = "";
@@ -68,14 +68,14 @@ public class WordDuoList {
     ("the", "red"), ("the", "fox"), **("the", "the")**, ("the", "red")
     ("red", "fox"), ("red", "the"), **("red", "red")**, ("fox", "the")
     ("fox", "red"), ("the", "red")
-     */
-    public int numMatches(){
-        /* part B  */
+    //  */
+    // public int numMatches(){
+    //     /* part B  */
         
 		
 		
-        return 0;  // replace this
-    }
+    //     return 0;  // replace this
+    // }
 
     /*Write the method moveMatchesToTop()  THis method will look for
     WordDuo matches and move them to the beginning of the ArrayList.
@@ -94,26 +94,26 @@ public class WordDuoList {
 		
     }
 
-    public static void main(String[] args){
-        String [] stuff = {"to","be","or","not","to","be"};
-        WordDuoList wdl = new WordDuoList(stuff);
-        System.out.println(wdl);
-        System.out.println(wdl.numMatches());
-        wdl.moveMatchesToTop();
-        System.out.println(wdl);
+//     public static void main(String[] args){
+//         String [] stuff = {"to","be","or","not","to","be"};
+//         WordDuoList wdl = new WordDuoList(stuff);
+//         System.out.println(wdl);
+//         //System.out.println(wdl.numMatches());
+//         wdl.moveMatchesToTop();
+//         System.out.println(wdl);
 
-        String [] stuff2 = {"one","fish","two","fish","red","fish","blue","fish"};
-        WordDuoList wdl2 = new WordDuoList(stuff2);
-        System.out.println(wdl2);
-        System.out.println(wdl2.numMatches());
-        wdl2.moveMatchesToTop();
-        System.out.println(wdl2);
+//         String [] stuff2 = {"one","fish","two","fish","red","fish","blue","fish"};
+//         WordDuoList wdl2 = new WordDuoList(stuff2);
+//         System.out.println(wdl2);
+//         //System.out.println(wdl2.numMatches());
+//         wdl2.moveMatchesToTop();
+//         System.out.println(wdl2);
 
-        String [] stuff3 = {"call","me","ishmael"};
-        WordDuoList wdl3 = new WordDuoList(stuff3);
-        System.out.println(wdl3);
-        System.out.println(wdl3.numMatches());
-        wdl3.moveMatchesToTop();
-        System.out.println(wdl3);
-    }
+//         String [] stuff3 = {"call","me","ishmael"};
+//         WordDuoList wdl3 = new WordDuoList(stuff3);
+//         System.out.println(wdl3);
+//         //System.out.println(wdl3.numMatches());
+//         wdl3.moveMatchesToTop();
+//         System.out.println(wdl3);
+//     }
 }
